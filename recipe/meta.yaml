@@ -25,9 +25,8 @@ requirements:
     - setuptools
     - wheel
   run:
-    - cython
     - python
-    - numpy
+    - numpy {{ numpy }}
 
 test:
   source_files:
