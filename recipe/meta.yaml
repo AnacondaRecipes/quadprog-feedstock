@@ -30,12 +30,17 @@ requirements:
     - numpy
 
 test:
+  source_files:
+    - tests
   imports:
     - quadprog
   commands:
     - pip check
+    - pytest tests -v
   requires:
     - pip
+    - pytest
+    - scipy
 
 about:
   home: https://github.com/rmcgibbo/quadprog
